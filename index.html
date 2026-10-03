@@ -732,11 +732,8 @@ button{
 
 .about-grid{
     display:grid;
-
-    grid-template-columns:400px 1fr;
-
-    gap:90px;
-
+    grid-template-columns:460px 1fr;
+    gap:70px;
     align-items:center;
 }
 
@@ -747,21 +744,20 @@ button{
 }
 
 .profile-photo{
-    width:min(370px,100%);
-
+    width:min(430px,100%);
     aspect-ratio:1/1;
 
     object-fit:cover;
-    object-position:center;
+    object-position:center 30%;
+
+    transform:scale(1.04);
 
     border-radius:50%;
-
     border:8px solid white;
 
     box-shadow:
-        0 22px 55px rgba(0,0,0,.15);
+        0 25px 65px rgba(0,0,0,.16);
 }
-
 /* NO decorative offset frame */
 
 .about-name{
@@ -1640,8 +1636,20 @@ footer{
     }
 
     .profile-photo{
-        width:min(300px,80%);
-    }
+    width:min(340px,88%);
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+    object-position:center 30%;
+
+    transform:scale(1.04);
+
+    border-radius:50%;
+    border:8px solid white;
+
+    box-shadow:
+        0 22px 55px rgba(0,0,0,.16);
+}
 
     .about-name{
         font-size:40px;
